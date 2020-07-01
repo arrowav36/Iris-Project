@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iris Flower Predictor!</title>
+<style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+	<center>
+		<h1>PREDICTION...</h1>
+
+		{% if data==[0.0] %}
+		<h1>Iris-setosa</h1>
+
+		<img src="{{url_for ('static', filename='setosa.jpeg')}}">
+
+		{% elif data==[1.0] %}
+		<h1>Iris-versicolor</h1>
+		
+		<img src="{{url_for ('static', filename='versicolor.jpg')}}">
+		
+		{% else %}
+		<h1>Iris-virginica</h1>
+
+		<img src="{{url_for ('static', filename='virginica.jpg')}}">
+
+		{% endif %}
+
+
+		<br>
+		<a href="/">Back to main page</a>
+
+
+	</center>
+</body>
+</html>
