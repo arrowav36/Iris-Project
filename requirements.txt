@@ -4,7 +4,7 @@ Flask-Mail==0.9.1
 Flask-SQLAlchemy==2.4.3
 gunicorn==19.9.0
 itsdangerous==1.1.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 joblib==0.15.1
 numpy==1.18.4
 numpydoc==0.8.0
